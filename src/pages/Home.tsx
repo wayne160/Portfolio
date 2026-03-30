@@ -1,59 +1,32 @@
-import { Link, useLocation } from "react-router-dom";
+import Navbar from './Navbar';
+import wayne from '../../public/wayne.jpg'
 
 const Home = () => {
-  const location = useLocation();
-
-  const isActive = (path: string) =>
-    location.pathname === path ? "nav-link active-link" : "nav-link";
-
   return (
-    <nav className="navbar navbar-expand-lg bg-white sticky-top border-bottom">
-      <div className="container">
+		<>
+			<Navbar/>
+			<div className="container mt-5">
+				<div className="row">
+					<div className="col-md-4 text-center">
+						<img className="w-75" src={wayne} alt="" />
+					</div>
+					<div className="col-md-8 container">
+						<h1 className="fw-bold">Wei Cheng Zhang</h1>
+						<p className="text-muted">Aspiring Software Engineer</p>
 
-        <Link className="navbar-brand fw-semibold fs-4" to="/">
-          Wayne Zhang
-        </Link>
-
-        <button
-          className="navbar-toggler border-0"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav ms-auto gap-lg-4 text-center">
-
-            <li className="nav-item">
-              <Link className={isActive("/")} to="/">
-                Home
-              </Link>
-            </li>
-
-            <li className="nav-item">
-              <Link className={isActive("/experience")} to="/experience">
-                Experience
-              </Link>
-            </li>
-
-            <li className="nav-item">
-              <Link className={isActive("/projects")} to="/projects">
-                Projects
-              </Link>
-            </li>
-
-            <li className="nav-item">
-              <Link className={isActive("/hobbies")} to="/hobbies">
-                Hobbies
-              </Link>
-            </li>
-
-          </ul>
-        </div>
-      </div>
-    </nav>
+						<p className="fs-5">
+							I am a Computer Science student from UNSW with experience in building full-stack web applications using React, TypeScript, and Python (Flask/FastAPI).
+							I am proficient in Java and familiar with software design patterns, as well as working with Linux systems and debugging tools.
+							I enjoy building practical applications and collaborating with others to solve real-world problems.
+							I also have a strong interest in cybersecurity, with experience in vulnerability analysis and basic security testing. 
+						</p>
+						<p className="fs-5">
+							Currently seeking graduate or internship roles in full-stack development or software testing.			
+						</p>
+					</div>
+				</div>
+			</div>
+		</>
   );
 };
 
