@@ -33,7 +33,7 @@ const projects = [
 const Project = () => {
   return (
     <>
-      <Navbar />
+      {/* <Navbar />
       <div className="container py-5">
         <div className="row">
             {projects.map((project, index) => (
@@ -68,7 +68,8 @@ const Project = () => {
                 </div>
             ))}
         </div>
-      </div>
+      </div> */}
+      hello
     </>
   );
 };
