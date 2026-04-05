@@ -68,6 +68,9 @@ const Project = () => {
                 </div>
             ))}
         </div>
+        <div className="container text-center">
+          <p className="display-6">More coming ...</p>
+        </div>
       </div>
     </>
   );
