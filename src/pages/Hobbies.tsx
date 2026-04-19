@@ -4,7 +4,7 @@ const Hobbies = () => {
   return (
         <>
             <Navbar/>
-            Hobbies
+            hello
         </>
   );
 };
