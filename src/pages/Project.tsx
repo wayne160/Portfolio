@@ -1,7 +1,7 @@
 import Navbar from './Navbar';
-import unsecureweb from '../../public/unsecureweb.png';
-import spottheball from '../../public/spottheball.png';
-import succulents from '../../public/succulents.png';
+import unsecureweb from '/unsecureweb.png';
+import spottheball from '/spottheball.png';
+import succulents from '/succulents.png';
 
 const projects = [
   {
