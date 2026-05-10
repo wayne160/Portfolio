@@ -96,7 +96,7 @@ const Hobbies = () => {
         />
         {
           hobbies.map((hobby, index) => (
-            <div className="d-flex justify-content-between align-items-center" style={{ marginTop: index > 0 ? '-8rem' : '0' }}>
+            <div className="d-flex justify-content-between align-items-center" style={{ marginTop: index > 0 ? '0rem' : '0' }}>
               {
                 index % 2 == 0 ? (
                   <>
