@@ -2,8 +2,17 @@ import Navbar from './Navbar';
 import unsecureweb from '/unsecureweb.png';
 import spottheball from '/spottheball.png';
 import succulents from '/succulents.png';
+import statsful from '/statsful.png';
 
 const projects = [
+  {
+    title: "StatsFul",
+    image: statsful,
+    description:
+      "A fun and interactive AI-powered quiz platform where you answer questions about yourself and instantly see how you compare to real survey data from trusted sources.",
+    link: "https://statsful.vercel.app/",
+    padding: "py-5"
+  },
   {
     title: "Unsecure Web",
     image: unsecureweb,
