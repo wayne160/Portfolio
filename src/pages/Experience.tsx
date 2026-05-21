@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Navbar from './Navbar';
 import GD from '/greendynamics.jpg';
+import PITCHUP from '/pitchup.jpg';
 import JBA from '/jba.png';
 import TK from '/tkmaxx.png';
 import SH from '/sushihub.jpg';
@@ -9,6 +10,19 @@ const Experience = () => {
   const [showMore, setShowMore] = useState<Record<number, boolean>>({});
 
   const interns = [
+    {
+      title: 'Software Engineer',
+      company: 'PitchUp',
+      date: 'Apr 2026 - Present',
+      companyDescription: 'AI-powered booking platform that activates underutilised school and community sports facilities for hire.',
+      roles: [
+        'Contributed to frontend web development and responsive UI improvements for a sports-tech platform using React, TypeScript, and Tailwind CSS.',
+        'Utilised tools such as Claude, Lovable, and Asana to accelerate prototyping, streamline collaboration, and improve development workflow efficiency.',
+        'Contributed product, UX, and business ideas through team discussions, lead-capture popup flows, player dashboard improvements, and venue onboarding/booking workflow concepts.'
+      ],
+      logo: PITCHUP,
+      skills: ['Reactjs', 'TypeScript', 'Tailwind CSS', 'Project Management & Collaboration Tools', 'UI Improvements', 'Product Ideation']
+    },
     {
       title: 'Software Engineer',
       company: 'Green Dynamics',

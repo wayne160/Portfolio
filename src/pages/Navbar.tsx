@@ -1,8 +1,8 @@
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+    <nav className="navbar navbar-expand-lg bg-body-tertiary sticky-top">
       <div className="container-fluid">
-        <a className="navbar-brand w-bold fs-1 ms-5" href="/">Wayne</a>
+        <a className="navbar-brand fw-bold fs-1 ms-5" href="/">Wayne</a>
         <button
           className="navbar-toggler"
           type="button"
@@ -28,7 +28,7 @@ const Navbar = () => {
             </li>
           </ul>
 
-          <ul className="navbar-nav ms-auto me-5 fs-5">
+          <ul className="navbar-nav ms-5 ms-lg-auto me-5 fs-5">
             <li className="nav-item">
               <a className="nav-link active" aria-current="page" href="/contact">Contact</a>
             </li>
